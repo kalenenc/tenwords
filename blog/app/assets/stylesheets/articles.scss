@@ -1,0 +1,78 @@
+// Place all the styles related to the Articles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import 'header';
+
+.new-post, input[type="submit"] {
+	background:white;
+	font-size:1em;
+	padding: 10px;
+	margin-top: $biggutter;
+	border-radius: 10px;
+}
+
+input[type="submit"] {
+	margin: 0;
+}
+
+table {
+	margin: 0 auto;
+	text-align: center;
+	width: 50%;
+	}
+
+a {
+	text-decoration: none;
+	color: $black;
+	font-weight: bold;
+	padding: $gutter;
+}
+
+.text {
+	padding: $gutter;
+	font-weight: bold;
+}
+
+label {
+	display: block;
+	font-size: 1.3em;
+	padding: $gutter;
+	text-align: left;
+}
+
+.form-container {
+    width: 40%;
+    margin: 0 auto;
+}
+
+form {
+	p {
+		padding: 20px;
+		width: 100%;
+	}
+}
+
+input, textarea, button {
+	border: 1px solid $lightgrey;
+	cursor: pointer;
+}
+
+#article_title, #article_text {
+	border-radius: 10px;
+	width: 100%;
+	font-size: 1em;
+	padding: $gutter;
+}
+
+#article_text {
+	height: 200px;
+	//border:none;
+}
+
+.goal {
+	display:none;
+	color:green;
+}
+
+

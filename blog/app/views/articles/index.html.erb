@@ -1,0 +1,25 @@
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700,700i" rel="stylesheet">
+
+<main> 
+  <%= render 'header' %>
+  <%= link_to '<button class="new-post" type="button">New Post</button>'.html_safe, new_article_path %>
+  <section class="container">
+    <table>
+      <% @articles.each do |article| %>
+        <tr>
+          <td>
+            <h2 class="title"><%= article.title %></h2>   
+          </td>     
+        </tr>
+        <tr>
+           <td><%= link_to 'View', article_path(article) %>
+             <%= link_to 'Edit', edit_article_path(article) %>
+             <%= link_to 'Delete', article_path(article),
+                    method: :delete,
+                    data: { confirm: 'Are you sure?' } %> 
+           </td>
+        </tr>
+      <% end %>
+    </table>
+  </section> 
+</main>

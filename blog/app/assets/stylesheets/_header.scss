@@ -1,0 +1,41 @@
+@import 'vars';
+
+
+*, *:before, *:after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: white;
+}
+
+main {
+	text-align: center;
+	font-family: 'PT Sans', sans-serif;
+
+	.title {
+				color: $peach;
+				font-size: 2em;
+				font-weight: bold;
+				padding-top:$biggutter;
+			}
+
+	h1 {
+		color: $black;
+		font-size: 5em;
+	}
+
+	h3 {
+		color: $grey;
+		font-family: 'Homemade Apple', cursive;
+		font-size: 1.5em;
+
+		.fa-heart {
+			color: $peach;
+		}
+	}
+	
+	
+}
